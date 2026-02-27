@@ -26,8 +26,13 @@ int main() {
     free(arr);//i don't want this memory anymore
     arr = NULL;
     double *darr;
+    printf("darr -> %p \n", darr);
     darr = (double *) calloc(sizeof(double),100);
+    printf("darr -> %p \n", darr);
     //is the same as -- darr = malloc(sizeof(double)*100);
     darr = (double *) realloc(darr,sizeof(double) * 500);//resize the pointer is not the same than the origin pointer
+    printf("darr -> %p \n", darr);
+
+
     return 0;
 }

@@ -12,6 +12,7 @@
 #include <unistd.h>
 
 //___?___ //tell to the compiler not add padding
+#pragma pack(1)
 typedef struct {
     uint8_t hours;
     uint32_t micros;

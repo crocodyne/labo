@@ -21,12 +21,15 @@ typedef struct node{
 int main() {
     node_t n = {.isValid =1, .size = 367, .next = NULL};
     node_t n2;
+    //declare a pointer n3 which is one node_t
+
     //how to copy n to n2 first solution 
     
-    //use memcopy 2nd solution
+    //use memcpy 2nd solution
 
     //use a buffer and copy n in to the buffer at offset 10 
+    //use memset to init the buffer at 0
+    
     //use the buffer to int n2 with the content at offset 10
 
-    //use memset to init the buffer at 0
 }
